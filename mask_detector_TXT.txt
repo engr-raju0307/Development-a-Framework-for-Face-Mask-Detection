@@ -1,0 +1,98 @@
+"D:\MIU\12th sem\Final Project\face-mask-detector\venv\Scripts\python.exe" "D:/MIU/12th sem/Final Project/face-mask-detector/train_mask_detector.py"
+2020-12-07 01:10:26.409540: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+[INFO] loading images...
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not in [96, 128, 160, 192, 224]. Weights for input shape (224, 224) will be loaded as the default.
+2020-12-07 01:10:33.018883: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll
+2020-12-07 01:10:33.044999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GT 710 computeCapability: 3.5
+coreClock: 0.954GHz coreCount: 1 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 37.33GiB/s
+2020-12-07 01:10:33.045368: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+2020-12-07 01:10:33.049609: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll
+2020-12-07 01:10:33.053779: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll
+2020-12-07 01:10:33.055016: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll
+2020-12-07 01:10:33.059617: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll
+2020-12-07 01:10:33.062076: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll
+2020-12-07 01:10:33.072139: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll
+2020-12-07 01:10:33.072408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-12-07 01:10:33.072971: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-12-07 01:10:33.081717: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x275fd058360 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-12-07 01:10:33.082103: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-12-07 01:10:33.082474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GT 710 computeCapability: 3.5
+coreClock: 0.954GHz coreCount: 1 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 37.33GiB/s
+2020-12-07 01:10:33.082830: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+2020-12-07 01:10:33.083015: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll
+2020-12-07 01:10:33.083213: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll
+2020-12-07 01:10:33.083400: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll
+2020-12-07 01:10:33.083582: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll
+2020-12-07 01:10:33.083770: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll
+2020-12-07 01:10:33.083962: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll
+2020-12-07 01:10:33.084184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-12-07 01:10:33.729611: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-07 01:10:33.729881: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-12-07 01:10:33.730000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-12-07 01:10:33.730263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1403 MB memory) -> physical GPU (device: 0, name: GeForce GT 710, pci bus id: 0000:01:00.0, compute capability: 3.5)
+2020-12-07 01:10:33.733517: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x275da3485b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-12-07 01:10:33.733763: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GT 710, Compute Capability 3.5
+[INFO] compiling model...
+[INFO] training head...
+Epoch 1/20
+2020-12-07 01:10:39.915920: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll
+2020-12-07 01:10:41.248604: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudnn64_7.dll
+2020-12-07 01:10:42.895509: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+32/32 [==============================] - 40s 1s/step - loss: 0.4706 - accuracy: 0.7945 - val_loss: 0.1128 - val_accuracy: 0.9732
+Epoch 2/20
+32/32 [==============================] - 27s 853ms/step - loss: 0.1487 - accuracy: 0.9491 - val_loss: 0.0652 - val_accuracy: 0.9799
+Epoch 3/20
+32/32 [==============================] - 27s 852ms/step - loss: 0.0891 - accuracy: 0.9775 - val_loss: 0.0472 - val_accuracy: 0.9866
+Epoch 4/20
+32/32 [==============================] - 28s 863ms/step - loss: 0.0636 - accuracy: 0.9806 - val_loss: 0.0410 - val_accuracy: 0.9866
+Epoch 5/20
+32/32 [==============================] - 27s 852ms/step - loss: 0.0652 - accuracy: 0.9775 - val_loss: 0.0390 - val_accuracy: 0.9866
+Epoch 6/20
+32/32 [==============================] - 28s 864ms/step - loss: 0.0411 - accuracy: 0.9873 - val_loss: 0.0354 - val_accuracy: 0.9866
+Epoch 7/20
+32/32 [==============================] - 27s 848ms/step - loss: 0.0325 - accuracy: 0.9922 - val_loss: 0.0353 - val_accuracy: 0.9866
+Epoch 8/20
+32/32 [==============================] - 27s 853ms/step - loss: 0.0312 - accuracy: 0.9914 - val_loss: 0.0339 - val_accuracy: 0.9866
+Epoch 9/20
+32/32 [==============================] - 27s 852ms/step - loss: 0.0347 - accuracy: 0.9879 - val_loss: 0.0322 - val_accuracy: 0.9866
+Epoch 10/20
+32/32 [==============================] - 29s 903ms/step - loss: 0.0249 - accuracy: 0.9948 - val_loss: 0.0335 - val_accuracy: 0.9866
+Epoch 11/20
+32/32 [==============================] - 28s 863ms/step - loss: 0.0228 - accuracy: 0.9940 - val_loss: 0.0340 - val_accuracy: 0.9866
+Epoch 12/20
+32/32 [==============================] - 28s 860ms/step - loss: 0.0285 - accuracy: 0.9905 - val_loss: 0.0340 - val_accuracy: 0.9866
+Epoch 13/20
+32/32 [==============================] - 28s 860ms/step - loss: 0.0248 - accuracy: 0.9914 - val_loss: 0.0351 - val_accuracy: 0.9866
+Epoch 14/20
+32/32 [==============================] - 27s 855ms/step - loss: 0.0228 - accuracy: 0.9940 - val_loss: 0.0323 - val_accuracy: 0.9866
+Epoch 15/20
+32/32 [==============================] - 27s 858ms/step - loss: 0.0237 - accuracy: 0.9905 - val_loss: 0.0286 - val_accuracy: 0.9866
+Epoch 16/20
+32/32 [==============================] - 27s 853ms/step - loss: 0.0152 - accuracy: 0.9974 - val_loss: 0.0273 - val_accuracy: 0.9866
+Epoch 17/20
+32/32 [==============================] - 27s 852ms/step - loss: 0.0136 - accuracy: 0.9974 - val_loss: 0.0262 - val_accuracy: 0.9866
+Epoch 18/20
+32/32 [==============================] - 27s 853ms/step - loss: 0.0125 - accuracy: 0.9974 - val_loss: 0.0257 - val_accuracy: 0.9866
+Epoch 19/20
+32/32 [==============================] - 27s 852ms/step - loss: 0.0156 - accuracy: 0.9940 - val_loss: 0.0272 - val_accuracy: 0.9933
+Epoch 20/20
+32/32 [==============================] - 27s 852ms/step - loss: 0.0109 - accuracy: 0.9965 - val_loss: 0.0256 - val_accuracy: 0.9866
+[INFO] evaluating network....
+              precision    recall  f1-score   support
+
+   with_mask       0.99      0.99      0.99       148
+without_mask       0.99      0.99      0.99       151
+
+    accuracy                           0.99       299
+   macro avg       0.99      0.99      0.99       299
+weighted avg       0.99      0.99      0.99       299
+
+[INFO] saving mask model...
+
+Process finished with exit code 0
